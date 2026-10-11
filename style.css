@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+.task-card {
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app-layout{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: calc(100vh - 80px);
+}
+.sidebar{
+    background-color: #f8fafc;
+    padding: 20px;
+    border-right: 1px solid #cbd5e1;
+}
+.main-content{
+    padding: 40px;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Smart Task Manager</h1>
+    </header>
+    
+    <div class="app-layout">
+        <aside class="sidebar">
+            <ul>
+                <li>งานทั้งหมด</li>
+                <li>งานเสร็จแล้ว</li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <!-- เพิ่มฟอร์มในส่วนนี้-->
+            <form id="taskForm" style="margin-bottom: 20px; display: flex; gap: 10px;">
+                <input type="text" id="taskInput" placeholder="เพิ่มงานใหม่..." required
+                style="flex: 1; padding: 10px;">
+                <select id="priorityInput">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit" style="padding: 10px 20px;">เพิ่มงาน</button>
+            </form>
+            <!-- พื้นที่แสดงงานฟอร์มในส่วนนี้-->
+             <main class="main-content" id="taskList"></main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
