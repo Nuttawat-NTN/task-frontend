@@ -48,7 +48,7 @@ const addTask = async (title, priority) => {
 
 const toggleTaskStatus = async (id) => {
     try {
-        await fetch(`http://localhost:3000/tasks/${id}`, {
+        await fetch(`https://cpe-task-api-6n5z.onrender.com${id}`, {
             method: 'PUT'
         });
         fetchTasks(); // ดึงข้อมูลใหม่
@@ -59,7 +59,7 @@ const toggleTaskStatus = async (id) => {
 
 const deleteTask = async (id) => {
     try {
-        await fetch(`http://localhost:3000/tasks/${id}`, {
+        await fetch(`https://cpe-task-api-6n5z.onrender.com${id}`, {
             method: 'DELETE'
         });
         fetchTasks(); // ดึงข้อมูลใหม่
